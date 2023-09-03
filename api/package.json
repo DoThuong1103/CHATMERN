@@ -9,7 +9,7 @@
   },
   "author": "",
   "license": "ISC",
-{
+
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cookie-parser": "^1.4.6",
@@ -21,4 +21,4 @@
     "mongoose": "^7.5.0",
     "ws": "^8.13.0"
   }
-}}
+}
