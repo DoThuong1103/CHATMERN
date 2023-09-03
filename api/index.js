@@ -10,7 +10,7 @@ const cors = require('cors')
 const ws = require('ws')
 const fs = require('fs')
 
-
+// 
 dotenv.config()
 mongoose.connect(process.env.MONGO_URL)
 const jwtSecret = process.env.JWT_SECRET
