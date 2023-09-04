@@ -6,11 +6,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon index.js",
-    "build": "npm i",
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "build": "npm i"
   },
   "engines": {
     "node": "^18.16.0"
+  },
+  "bin" : {
+    "execute" : "index.js"
   },
   "author": "",
   "license": "ISC",
