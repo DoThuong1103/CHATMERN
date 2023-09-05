@@ -23,6 +23,8 @@ app.use(cookiesParser())
 app.use(cors({
   credentials: true,
   origin: process.env.CLIENT_URL,
+  methods: ['POST', 'GET']
+  // origin: process.env.CLIENT_URL,
 }));
 
 const getUserDataFromRequest = async (req) => {
@@ -85,6 +87,7 @@ app.post('/login', async (req, res) => {
         if (err) throw err;
         res.cookie('token', token).json({
           id: foundUser._id,
+          token: "12324",
         })
       })
     }

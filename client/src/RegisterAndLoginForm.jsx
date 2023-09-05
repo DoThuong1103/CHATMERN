@@ -19,6 +19,7 @@ export const RegisterandLoginForm = () => {
         if (isLogin) {
           setLoggedInUsername(username);
           setId(data.id);
+          console.log(data);
         } else {
           setIslogin(!isLogin);
           setUsername("");
