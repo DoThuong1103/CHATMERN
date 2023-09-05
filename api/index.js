@@ -13,8 +13,8 @@ const fs = require('fs')
 // #!/usr/bin / env node
 
 dotenv.config()
-mongoose.connect(process.env.MONGO_URL)
-const jwtSecret = process.env.JWT_SECRET
+mongoose.connect("mongodb+srv://mernchat:XKnCRT4QdCg4AxhX@cluster0.wlm8p7e.mongodb.net/?retryWrites=true&w=majority")
+const jwtSecret = "vjshdfgshjdgbnxcv783465gfdgy"
 
 const app = express()
 app.use('/uploads', express.static(__dirname + '/uploads'))
@@ -22,7 +22,7 @@ app.use(express.json())
 app.use(cookiesParser())
 app.use(cors({
   credentials: true,
-  origin: process.env.CLIENT_URL,
+  origin: "http://localhost:5173",
   methods: ['POST', 'GET']
   // origin: process.env.CLIENT_URL,
 }));
