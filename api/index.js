@@ -47,6 +47,10 @@ app.get('/test', (req, res) => {
   res.json('Hello World 1')
 })
 
+app.get('/', (req, res) => {
+  res.json('Hello World 1')
+})
+
 app.get('/messages/:userId', async (req, res) => {
   const { userId } = req.params
   const userData = await getUserDataFromRequest(req)
